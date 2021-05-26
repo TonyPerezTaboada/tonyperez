@@ -1,12 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Count from "./components/Count";
+import Header from "./components/Header";
+import ShowWindowWidth from "./components/ShowWindowWidth";
+import Character from "./components/Characters";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+      <h1>Hola</h1>
+      <ShowWindowWidth />
+      <Header />
+      <Count />
+      <Character />
     </div>
   );
 }
