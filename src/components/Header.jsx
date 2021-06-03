@@ -1,22 +1,35 @@
-import React, { useState, useContext } from "react";
-import ThemeContext from "../context/ThemeContext";
+import React from "react";
+
+import "../css/GlobalStyle.css";
+import "../css/Header.css";
 
 const Header = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const handleClick = () => {
-    setDarkMode(!darkMode);
-  };
-
-  const color = useContext(ThemeContext);
-
   return (
-    <div className="Header">
-      <h1 style={{ color }}>ReactHooks</h1>
-      <button type="button" onClick={handleClick}>
-        {darkMode ? "Dark Mode" : "Light Mode"}
-      </button>
-    </div>
+    <header>
+      <div className="Profile">
+        <figure className="Profile-image">
+          <img src="./assets/img/profile-image.jpg" alt="Imagen de Perfil" />
+        </figure>
+      </div>
+      <figure className="Logo">
+        <img src="./assets/img/icon-kali-blue-medium.svg" alt="Logo Kali" />
+      </figure>
+      <nav>
+        <input type="checkbox" id="menu" />
+        <label for="menu"> Menu </label>
+        <ul>
+          <li>
+            <button>Home</button>
+          </li>
+          <li>
+            <button>YYYY</button>
+          </li>
+          <li>
+            <button>XXXX</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 };
 

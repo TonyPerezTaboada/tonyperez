@@ -1,0 +1,85 @@
+header {
+    height: 7rem;
+    background: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header nav {
+    width: 45%;
+    height: 7rem;
+    color: black;
+    display: flex;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+header nav ul li:hover {
+    background-color: rgb(172, 0, 252);
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li button {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 2.8rem 1.6rem;
+    text-decoration: none;
+    border: none;
+    background: transparent;
+}
+
+.Logo {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.Logo:hover {
+    cursor: pointer;
+}
+
+.Logo img {
+    width: auto;
+    height: 5rem;
+}
+
+.Profile {
+    height: 7rem;
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.Profile-image img {
+    width: auto;
+    height: 5rem;
+    border-radius: 5rem;
+    margin-left: 2rem;
+    margin-top: 0.3rem;
+}
+
+
+
+
+@media ( min-width: 600px) {}
+
+@media ( min-width: 800px) {}

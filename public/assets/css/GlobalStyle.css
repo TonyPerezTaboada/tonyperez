@@ -1,0 +1,23 @@
+:root {
+    --primary-color: rgb(54, 54, 54);
+    --gradient-background-header: radial-gradient(circle, rgb(54, 94, 228) 0%, rgba(0, 0, 0, 1) 95%);
+    --gradient-backgrounnd-header-2: radial-gradient(circle, rgb(172, 0, 252) 0%, rgba(0, 0, 0, 1) 95%);
+    --gradient-backgrounnd-html: radial-gradient(circle, rgb(54, 94, 228) 0%, rgb(172, 0, 252) 95%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 62.5%;
+    background-image: var(--gradient-backgrounnd-html);
+    min-width: 20rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
