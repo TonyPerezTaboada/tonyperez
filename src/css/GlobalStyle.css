@@ -1,0 +1,40 @@
+:root {
+    --primary-color-blue: rgb(54, 94, 228);
+    --primary-color-purple: rgb(172, 0, 252);
+    --primary-color-theme: rgb(54, 54, 54);
+    --gradient-backgrounnd-html: radial-gradient(circle, var(--primary-color-blue) 0%, var(--primary-color-purple) 95%);
+    --font-color: rgb(177 177 177);
+    --font-family-roboto: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    background-image: var(--gradient-backgrounnd-html);
+    min-width: 20rem;
+    height: 100vh;
+    font-family: var(--font-family-roboto);
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+
+.scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    /* Firefox */
+}

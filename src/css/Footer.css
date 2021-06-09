@@ -1,0 +1,17 @@
+footer {
+    height: 5rem;
+    bottom: 0;
+    background: var(--primary-color-theme);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    width: 100vw;
+}
+
+
+.Copyright {
+    color: var(--font-color);
+    font-family: var(--font-family-roboto);
+}

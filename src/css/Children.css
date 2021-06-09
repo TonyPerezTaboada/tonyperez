@@ -1,0 +1,9 @@
+.Children {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    width: 100vw;
+    height: auto;
+    min-height: calc(100vh - 12rem);
+}
+
+

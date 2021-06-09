@@ -1,46 +1,18 @@
 header {
     height: 7rem;
-    background: var(--primary-color);
+    background: var(--primary-color-theme);
     display: flex;
     flex-wrap: wrap;
+    position: fixed;
+    width: 100vw;
 }
 
-header nav {
+.Menu {
+    display: flex;
+    flex-wrap: wrap;
     width: 45%;
-    height: 7rem;
-    color: black;
-    display: flex;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    margin-left: auto;
     justify-content: flex-end;
-}
-
-header nav ul {
-    list-style: none;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: transparent;
-}
-
-header nav ul li:hover {
-    background-color: rgb(172, 0, 252);
-}
-
-header nav ul li {
-    float: left;
-}
-
-header nav ul li button {
-    display: flex;
-    color: white;
-    text-align: center;
-    padding: 2.8rem 1.6rem;
-    text-decoration: none;
-    border: none;
-    background: transparent;
+    align-content: center;
 }
 
 .Logo {
@@ -49,6 +21,10 @@ header nav ul li button {
     justify-content: center;
     align-content: center;
     align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
 }
 
 .Logo:hover {
@@ -75,10 +51,11 @@ header nav ul li button {
     border-radius: 5rem;
     margin-left: 2rem;
     margin-top: 0.3rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
 }
-
-
-
 
 @media ( min-width: 600px) {}
 
