@@ -3,26 +3,24 @@
     position: absolute;
     width: 100vw;
     height: calc(100vh - 12rem);
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--background-with-transparency-menu);
 }
 
 .Main-menu-active ul {
     list-style: none;
     list-style-type: none;
-    margin-top: 7rem;
-    margin-bottom: 5rem;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
     padding: 0;
-    overflow: hidden;
+    overflow: auto;
     background-color: transparent;
     height: calc(100vh - 12rem);
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    flex-wrap: wrap;
 }
 
 .Main-menu-active ul li button {
@@ -57,6 +55,10 @@
     background-color: transparent;
     margin: 0.6rem;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .Hamburger-active {
@@ -65,6 +67,10 @@
     background-color: transparent;
     margin: 0.6rem;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .Hamburger-active:-moz-read-write:focus {
@@ -89,17 +95,20 @@
 }
 
 ._layer {
-    height: 0.3rem;
-    width: 2.5rem;
+    height: 0.5rem;
+    width: 3rem;
     background-color: var(--primary-color-blue);
-    border-radius: 10%;
-    margin: 0.5rem auto 0.5rem auto;
+    border-radius: 1rem;
+    margin: 0.25rem 0.2rem;
+    transition: ease-in-out .4s ;
 }
 
 .Hamburger-active .-top {
-    -webkit-transform: translateY(200%) rotate(45deg);
-    -ms-transform: translateY(200%) rotate(45deg);
-    transform: translateY(200%) rotate(45deg);
+    -webkit-transform: translateY(250%) rotate(45deg);
+    -ms-transform: translateY(250%) rotate(45deg);
+    transform: translateY(250%) rotate(45deg);
+    transition: ease-in-out .4s;
+    background-color: red;
 }
 
 .Hamburger-active .-mid {
@@ -107,7 +116,9 @@
 }
 
 .Hamburger-active .-bottom {
-    -webkit-transform: translateY(-300%) rotate(135deg);
-    -ms-transform: translateY(-300%) rotate(135deg);
-    transform: translateY(-300%) rotate(135deg);
+    -webkit-transform: translateY(-150%) rotate(135deg);
+    -ms-transform: translateY(-150%) rotate(135deg);
+    transform: translateY(-150%) rotate(135deg);
+    transition: ease-in-out .4s ;
+    background-color: red;
 }

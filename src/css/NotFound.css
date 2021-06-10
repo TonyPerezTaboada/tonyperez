@@ -1,0 +1,22 @@
+.Message {
+    width: 50vw;
+    height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background-with-transparency-message);
+    color: white;
+    border-radius: 10%;
+}
+
+.Message button {
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    background: white;
+    border-style: none;
+    cursor: pointer;
+}

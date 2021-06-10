@@ -3,14 +3,18 @@
     --primary-color-purple: rgb(172, 0, 252);
     --primary-color-theme: rgb(54, 54, 54);
     --gradient-backgrounnd-html: radial-gradient(circle, var(--primary-color-blue) 0%, var(--primary-color-purple) 95%);
+    --gradient-backgrounnd-error: radial-gradient(circle, red 0%, black 95%);
     --font-color: rgb(177 177 177);
     --font-family-roboto: 'Roboto', sans-serif;
+    --background-with-transparency-menu: rgba(0, 0, 0, 0.5);
+    --background-with-transparency-message: rgba(0, 0, 0, 0.2);
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 html {
@@ -23,18 +27,4 @@ html {
 
 p {
     font-size: 1.6rem;
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-
-.scrollbar-hidden::-webkit-scrollbar {
-    display: none;
-}
-
-/* Hide scrollbar for IE, Edge add Firefox */
-
-.scrollbar-hidden {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    /* Firefox */
 }
