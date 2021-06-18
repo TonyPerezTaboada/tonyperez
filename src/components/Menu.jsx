@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import  { useState } from "react";
+import { Link } from "react-router-dom";
 import "../css/GlobalStyle.css";
 import "../css/Menu.css";
 
@@ -22,16 +23,26 @@ const Menu = () => {
       <nav className={`Main-menu${active ? "-active" : ""}`}>
         <ul>
           <li>
-            <button type="button" onClick={toggleMenu}>Opcion 1</button>
+            <Link to="/tests">
+              <button type="button" onClick={toggleMenu}>
+                Tests
+              </button>
+            </Link>
           </li>
           <li>
-            <button type="button" onClick={toggleMenu}>Opcion 2</button>
+            <button type="button" onClick={toggleMenu}>
+              Opcion 2
+            </button>
           </li>
           <li>
-            <button type="button" onClick={toggleMenu}>Opcion 3</button>
+            <button type="button" onClick={toggleMenu}>
+              Opcion 3
+            </button>
           </li>
           <li>
-            <button type="button" onClick={toggleMenu}>Opcion 4</button>
+            <button type="button" onClick={toggleMenu}>
+              Opcion 4
+            </button>
           </li>
         </ul>
       </nav>

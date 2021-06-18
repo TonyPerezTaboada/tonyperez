@@ -6,11 +6,10 @@
 .c1, .c2, .c3, .c4, .c5 {
     width: 100%;
     min-height: 15rem;
-    height: 30rem;
-    margin: 1rem 0.5rem;
+    /* margin: 1rem 0.5rem; */
     /* border: 0.1rem solid; */
     /* border-color: var(--primary-color-blue); */
-    border-radius: 20%;
+    /* border-radius: 20%; */
     background-color: var(--background-with-transparency-menu);
 }
 
@@ -18,9 +17,6 @@
 
     .c2, .c3, .c4, .c5 {
         width: 50%;
-    }
-    .c1, .c2, .c3, .c4, .c5 {
-        margin: 0;
     }
 }
 
@@ -34,15 +30,12 @@
         width: 100%;
     }
     .c2, .c3 {
-        width: 33%;
+        width: 20%;
     }
     .c4 {
-        width: 34%;
+        width: 60%;
     }
     .c5 {
         width: 100%;
-    }
-    .c1, .c2, .c3, .c4, .c5 {
-        margin: 0;
     }
 }

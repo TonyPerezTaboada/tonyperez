@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Count() {
   // Declaración de una variable de estado que llamaremos "count"
